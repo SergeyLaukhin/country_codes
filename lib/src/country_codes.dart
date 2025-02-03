@@ -9,7 +9,7 @@ import 'package:flutter/widgets.dart';
 class CountryCodes {
   static const MethodChannel _channel = const MethodChannel('country_codes');
   static Locale? _deviceLocale;
-  static late Map<String, String> _localizedCountryNames;
+  static Map<String, String> _localizedCountryNames = {};
 
   static String? _resolveLocale(Locale? locale) {
     locale ??= _deviceLocale;
